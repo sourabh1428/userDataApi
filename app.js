@@ -1,10 +1,12 @@
 const express=require('express')
-const port=3002
+const cors = require('cors');
 const app=express();
 const users =require('./MOCK_DATA (1).json')
 const fs=require('fs')
 const mongoose=require('mongoose');
+require('dotenv').config();
 
+const PORT = process.env.PORT || 3002;
 
 
 
@@ -54,6 +56,12 @@ const userSchema=new mongoose.Schema({
 const User=mongoose.model("user",userSchema);
 
 
+
+
+
+
+// Use CORS middleware
+app.use(cors());
 
 
 app.use(express.urlencoded({extended:false}))
