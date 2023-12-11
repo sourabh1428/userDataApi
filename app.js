@@ -149,5 +149,5 @@ app.post('/api/users',async (req,res)=>{
 
 
 app.listen(PORT,(req,res)=>{
-  console.log(`server listening on ${port}`);
+  console.log(`server listening on ${PORT}`);
 })
