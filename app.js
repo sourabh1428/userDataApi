@@ -13,7 +13,7 @@ const mongoose=require('mongoose');
 
 
 
-mongoose.connect("mongodb://127.0.0.1:27017/myApp")
+mongoose.connect("mongodb+srv://sppathak1428:Pb7b59CVnTmlWYXW@cluster0.xx2o6vt.mongodb.net/")
 .then(()=>console.log("mongo db is connected 😄"))
 .catch(err=>console.log("err"))
 
